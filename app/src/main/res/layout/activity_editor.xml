@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for the editor -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_overview" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingStart="4dp">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_student_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_student_name"
+                android:inputType="textCapWords" />
+
+            <!-- Group field -->
+            <EditText
+                android:id="@+id/edit_student_group"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_student_group"
+                android:inputType="textCapWords" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edit_student_cost"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:hint="cost"
+                android:inputType="numberDecimal" />
+                <ImageView
+                    android:id="@+id/add_view_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_adjust_black_24dp" />
+
+
+            </LinearLayout>
+
+
+
+
+            <EditText
+                android:id="@+id/edit_student_school"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_student_school"
+                android:inputType="textCapWords" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Phone Number category -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_phone_number" />
+
+            <LinearLayout
+                android:id="@+id/tel_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <!-- Phone Number field -->
+
+                <EditText
+                    android:id="@+id/student_phone_number"
+                    style="@style/EditorFieldStyle"
+                    android:layout_marginStart="4dp"
+                    android:hint="@string/hint_student_number"
+                    android:inputType="phone" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_add_phone_number" />
+
+
+            <ImageView
+                android:id="@+id/add_view_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_degree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_degree" />
+
+            <LinearLayout
+                android:id="@+id/degree_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <!-- Input fields -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="2dp">
+
+                    <!-- Degree field -->
+                    <EditText
+                        android:id="@+id/first_student_degree"
+                        style="@style/DegreeStyle"
+                        android:hint="@string/hint_student_quiz"
+                        android:inputType="numberDecimal" />
+
+                    <EditText
+                        android:id="@+id/second_student_degree"
+                        style="@style/DegreeStyle"
+                        android:hint="@string/hint_student_quiz"
+                        android:inputType="numberDecimal" />
+
+                    <EditText
+                        android:id="@+id/third_student_degree"
+                        style="@style/DegreeStyle"
+                        android:hint="@string/hint_student_quiz"
+                        android:inputType="numberDecimal" />
+
+                    <EditText
+                        android:id="@+id/fourth_student_degree"
+                        style="@style/DegreeStyle"
+                        android:hint="@string/hint_student_exam"
+                        android:inputType="numberDecimal" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_add_degree" />
+
+
+            <ImageView
+                android:id="@+id/add_view_degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/container_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="Days" />
+
+                <LinearLayout
+                    android:id="@+id/days_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="Add Days" />
+
+
+                <ImageView
+                    android:id="@+id/add_view_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+                     />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The app branding color for the app bar -->
+    <color name="colorPrimary">#F0514B</color>
+
+    <!-- Darker variant for the status bar and contextual app bars -->
+    <color name="colorPrimaryDark">#C0403C</color>
+
+    <!-- Accent color for UI controls like checkboxes and text fields -->
+    <color name="colorAccent">#F0514B</color>
+
+    <!-- Primary color for the editor -->
+    <color name="editorColorPrimary">#F0514B</color>
+
+    <!-- Primary dark color for the editor -->
+    <color name="editorColorPrimaryDark">#C0403C</color>
+    <!-- Magnitude circle color for an earthquake with magnitude between 2 and 3 -->
+    <color name="magnitude1">#eba805</color>
+
+    <!-- Magnitude circle color for an earthquake with magnitude between 3 and 4 -->
+    <color name="magnitude3">#fce264</color>
+    <color name="magnitude2">#cddfe4</color>
+
+
+    <!-- Magnitude circle color for an earthquake with magnitude between 4 and 5 -->
+    <color name="magnitude4">#a8b878</color>
+
+    <!-- Magnitude circle color for an earthquake with magnitude between 5 and 6 -->
+    <color name="magnitude5">#d9584c</color>
+
+</resources>
